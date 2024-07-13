@@ -14,6 +14,8 @@
     <Content Remove="package-lock.json" />
     <Content Remove="package.json" />
     <Content Remove="tsconfig.json" />
+    <Content Remove="tsconfig.app.json" />
+    <Content Remove="tsconfig.node.json" />
     <!-- Don't remove this line or your manifest.json won't be copied on publish -->
     <Content Include="wwwroot\.vite\**" />
   </ItemGroup>
@@ -22,6 +24,8 @@
     <None Include="package-lock.json" />
     <None Include="package.json" />
     <None Include="tsconfig.json" />
+    <None Include="tsconfig.app.json" />
+    <None Include="tsconfig.node.json" />
   </ItemGroup>
 
   <!-- Ensure Node environment on Build -->
