@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="~/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Template.AspNetCore.MVC.Vue</title>
+	@await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body>
+    <header>        
+        <nav class="navbar">
+            <ul>
+                <li class="nav-item btn"> 
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item btn">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                        asp-action="Privacy">Privacy</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    @RenderBody()
+
+    <footer>
+        <div class="container">
+            &copy; 2024 - Template.AspNetCore.MVC.Vue - <a asp-area="" asp-controller="Home"
+                asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

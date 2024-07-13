@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* This line includes the style from the "index.ts" entrypoint *@
+@section Styles {
+	<link rel="stylesheet" vite-href="~/views/index.ts" asp-append-version="true" />
+}
+<main role="main" id="app">
+</main>
+
+<!-- This line includes your "index.ts" entrypoint -->
+<script type="module" vite-src="~/views/index.ts"></script>
